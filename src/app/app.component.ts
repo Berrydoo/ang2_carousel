@@ -2,9 +2,20 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+<carousel [delay]="2000">
+  <carousel-item>
+    <img src="https://unsplash.it/200?image=0" alt="">
+  </carousel-item>
+  <carousel-item>
+    <img src="https://unsplash.it/200?image=100" alt="">
+  </carousel-item>
+  <carousel-item>
+    <img src="https://unsplash.it/200?image=200" alt="">
+  </carousel-item>
+</carousel>
+`
 })
 export class AppComponent {
-  title = 'app works!';
+  
 }
